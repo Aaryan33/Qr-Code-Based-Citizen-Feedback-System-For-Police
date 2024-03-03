@@ -8,7 +8,7 @@ from Main import visualize_and_save
 app = Flask(__name__)
 
 # Connect to MongoDB
-myclient = pymongo.MongoClient("mongodb+srv://programmer:programmer@cluster0.npnpn7l.mongodb.net/?retryWrites=true&w=majority")
+myclient = pymongo.MongoClient("mongodb+srv://(#cluster username):(#cluster password)@cluster0.npnpn7l.mongodb.net/?retryWrites=true&w=majority")
 db = myclient["qr"]
 feedback_collection = db["feedback"]
 
